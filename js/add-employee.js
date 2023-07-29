@@ -17,12 +17,9 @@ function init(){
         let email = document.getElementById("email").value;
         let department = document.getElementById("department").value;
 
-        let output = window.opener.document.getElementById("loginDetails");
-        output.innerHTML = "<br><br> Id: " + id + 
-                            "<br> Name: " + name +
-                            "<br> Extension: : " + extension +
-                            "<br> Email: " + email +
-                            "<br> Department: " + department;
+        var output = window.opener.document.getElementById("loginDetails");
+        console.log(output)
+        output.innerHTML = "<br><br> Id: " + id +  "<br> Name: " + name + "<br> Extension: : " + extension + "<br> Email: " + email + "<br> Department: " + department;
         window.close();
 
 
@@ -32,8 +29,10 @@ function init(){
      cancel.addEventListener("click",function(){
         window.close();
      });
-}
-window.addEventListener('load', init);
+    }
+
+    window.addEventListener('load', init);
+
 
 
 
