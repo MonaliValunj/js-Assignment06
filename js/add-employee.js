@@ -18,7 +18,7 @@ function init(){
         let department = document.getElementById("department").value;
 
         var output = window.opener.document.getElementById("loginDetails");
-        console.log(output)
+        console.log(output);
         output.innerHTML = "<br><br> Id: " + id +  "<br> Name: " + name + "<br> Extension: : " + extension + "<br> Email: " + email + "<br> Department: " + department;
         window.close();
 
